@@ -1,0 +1,99 @@
+
+*, *::before, 
+    *::after {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(200, 197, 197);
+    > header {
+        margin: 0;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    > h1 {
+    color: white;
+}
+    }
+    /* > h2 {
+    color: white;
+    } */
+    .profileBox {
+        width: 100%;
+        background-color: rgb(75, 74, 74);
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+
+        > .profilePicture {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        > .profileName {
+            color: white;
+        }
+    }
+
+    .chatBox {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+        height: auto;
+        padding-bottom: 1.5em;
+        /* padding-top: 1em; */
+        position: absolute;
+        bottom: 0;
+        background-color: red;
+
+        > #chatInput {
+            margin-top: 1em;
+            width: 50%;
+            height: 3rem;
+        }
+
+        > .speechBtn {
+            font-size: 28px;
+            padding: 0;
+            width: 5rem;
+            height: 3rem;
+            background-color: blue;
+        }
+        > .sendBtn {
+            font-size: 24px;
+            width: 5rem;
+            height: 3rem;
+            background-color: green;
+        }
+
+    }
+
+}
+
+.speechBox {
+    display: flex;
+    background-color: blue;
+    width: 80rem;
+    height: 3rem;
+}
+
+/* .hidden {
+    display: flex;
+    margin: 0 auto;
+    background-color: red;
+    width: 60rem;
+    height: 50rem;
+} */
