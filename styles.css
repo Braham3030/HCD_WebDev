@@ -6,94 +6,84 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
     margin: 0;
-    background-color: rgb(200, 197, 197);
+    padding: 0;
+    width: 200px;
+    height: auto;
+    
+
     > header {
-        margin: 0;
-        background-color: black;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        padding: 2em;
+
     > h1 {
-    color: white;
-}
+        font-size: 1.5em;
     }
-    /* > h2 {
-    color: white;
-    } */
-    .profileBox {
-        width: 100%;
-        background-color: rgb(75, 74, 74);
-        height: 5rem;
+}
+    > main {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 10rem;
+        align-items: flex-start;
 
-        > .profilePicture {
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
-            background-color: white;
-        }
+        > form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        > .profileName {
-            color: white;
+            > .summarize {
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+                > legend {
+                    /* padding: 1.5em; */
+                    font-size: 1.1em;
+                }
+
+                > label {
+                    display: flex;
+                    background-color: white;
+                    border: 2px solid green;
+                    border-radius: 24px;
+                    width: 6em;
+                    height: 3em;
+                    position: relative;
+
+                    transition: border 0.8s ease-in-out, background-color 0.6s ease-in-out;
+
+                    &::before {
+                        content: "";
+                        width: 2.5em;
+                        height: 2.5em;
+                        border-radius: 50%;
+                        background-color: green;
+                        position: absolute;
+                        top: 50%;
+                        left: 2%;
+                        transform: translate(0%, -50%);
+                    }
+
+                    > input {
+                        appearance: none;
+                    }
+
+                    &:has(input:checked) {
+                        background-color: grey;
+                        border: 4px solid green;
+                        &::before {
+                            width: 2.3em;
+                            height: 2.3em;
+                            left: 98%;
+                            transform: translate(-100%, -50%);
+                        }
+                    }
+                }
+            }
         }
     }
-
-    .chatBox {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        width: 100%;
-        height: auto;
-        padding-bottom: 1.5em;
-        /* padding-top: 1em; */
-        position: absolute;
-        bottom: 0;
-        background-color: red;
-
-        > #chatInput {
-            margin-top: 1em;
-            width: 50%;
-            height: 3rem;
-        }
-
-        > .speechBtn {
-            font-size: 28px;
-            padding: 0;
-            width: 5rem;
-            height: 3rem;
-            background-color: blue;
-        }
-        > .sendBtn {
-            font-size: 24px;
-            width: 5rem;
-            height: 3rem;
-            background-color: green;
-        }
-
-    }
-
 }
-
-.speechBox {
-    display: flex;
-    background-color: blue;
-    width: 80rem;
-    height: 3rem;
-}
-
-/* .hidden {
-    display: flex;
-    margin: 0 auto;
-    background-color: red;
-    width: 60rem;
-    height: 50rem;
-} */
