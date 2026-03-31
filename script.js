@@ -1,11 +1,22 @@
 
 console.log("Hello World!");
 
-let button = document.querySelector(".speechBtn");
-let speechBox = document.querySelector(".speechBox");
+const testToggle = document.getElementById("summarizeCheckbox");
 
-    
-button.addEventListener("click", function() {
-    console.log("Button clicked!");
-    speechBox.classList.toggle("speechBox");
-});
+testToggle.addEventListener("change", async () => {
+
+    let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+    chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        args: [testToggle.checked],
+        func: (isChecked) => {
+            if (isChecked) {
+                document.body.style.backgroundColor = "red";
+            } else {
+                document.body.style.backgroundColor = "";
+            }
+        }
+    })
+
+})
