@@ -26,3 +26,8 @@ Morgen zal hier de eerste test over komen en de handelingen van de gebruiker een
 * Raak je weleens verdwaald op een website? Dus dat je niet meer weet waar je bent en wat je moet doen.
 * Stel dat er een lange tekstbericht binnenkomt die de screenreader voorleest, is dit dan te volgen?
 * Welke chat app gebruik je voornamelijk?
+
+
+### Dag 2
+
+Vandaag verdere itteratie over het onderwerp en verder gezocht naar methodes om de toegankelijkheid te verbeteren. Ik wil hierbij gebruk maken van chrome extension, hiermee kan ik de toegankelijkheids feature op meerdere sites laten werken. Ook kreeg ik te horen dat het handig kan zijn om de AI bepaalde samenvattingen niet te laten doen, omdat de gebruiker die juist wel helemaal wil beluistern. Dit kan opgelost worden door een knop om te zetten hiervoor.
