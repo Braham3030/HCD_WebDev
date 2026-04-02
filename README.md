@@ -31,3 +31,79 @@ Morgen zal hier de eerste test over komen en de handelingen van de gebruiker een
 ### Dag 2
 
 Vandaag verdere itteratie over het onderwerp en verder gezocht naar methodes om de toegankelijkheid te verbeteren. Ik wil hierbij gebruk maken van chrome extension, hiermee kan ik de toegankelijkheids feature op meerdere sites laten werken. Ook kreeg ik te horen dat het handig kan zijn om de AI bepaalde samenvattingen niet te laten doen, omdat de gebruiker die juist wel helemaal wil beluistern. Dit kan opgelost worden door een knop om te zetten hiervoor.
+
+
+## Voortgangsgesprek
+
+### Week 1
+
+Deze week heb ik gewerkt aan het bedenken van een idee voor de case. Hierbij ben ik uitgekomen op het gebruik van extensies, omdat extensies op elke website actief gebruikt kan worden. Ook is er een user test uitgevoerd met de eindgebruiker. Hier zijn relevante punten uit voor gekomen, zoals hieronder te zien is.
+
+
+#### Week 1:
+
+* De aandoening is genetisch.
+
+* Hobby’s houtbewerken, jukalelen, programeren.
+
+* Windows overlay wordt er gebruikt om kleuren om te draaien. 
+
+* Zoom wordt er gebruikt om dingen goed te zien
+
+* Spraak software wordt er gebruikt
+
+* De selectie op het scherm is niet altijd duidelijk. De tabs gaan niet duidelijk van de ene naar de andere kant
+
+* Data uitschrijven, omdat schermlezer het niet goed op pakt als het in cijfers erin staat. Datum als secundairy onderdeel gebruiken.
+
+* Geen start en stop knop apart zetten. Gebruik 1 knop om een spraakopname te starten en te stoppen.
+
+* Feedback berichten zijn belangrijk, zodat “Berend” weet dat er iets gebeurt op het scherm. (Liefst audio feedback).
+
+* Audio mute is niet handig, omdat de persoon de audio juist nodig heeft en de gebruiker anders meerdere onderdelen moet tabben.
+
+* Simpele interacties is het beste
+
+* Rekening houden met omgekeerde kleuren
+
+* Contrast goed bekijken
+
+* Alt text goed bekijken
+
+* Geluid moet niet te zacht zijn. Goed duidelijk geluid!
+
+* Lichtere kleuren is gelijk aan hoge tonen, en donkere kleuren met lage tonen!
+
+* Hoe meer feedback hoe beter
+
+* Je moet altijd kunnen pauzeren, en ook de plaats van beginnen voor fragment kunnen bepalen.
+
+* De letter “B” is een sneltoets voor button
+
+* Nvda sneltoetsen bekijken, zodat er geen sneltoets conflict ontstaat
+
+* Het is fijn als de gebruiker aan het begin weet waar de persoon is. Welke website? En niet per se de hele html te laten voorlezen aan het begin.
+
+* Laptop telefoon vooral gebruikt
+
+* Spraakberichten vooral gebruikt op signal en whatsapp!
+
+* Meestal telefoon gebruikt voor social media, soms laptop voor whatsapp
+
+* Er wordt meer getypt dan gesproken voor het sturen van teksten.
+
+* Braile toetsenbord wordt er gebruikt op de telefoon om te typen
+
+* Spraakbericht reageren haalt de gebruiker uit de flow, omdat de spraakbericht te lang is
+
+* Geheel wordt geluisterd, en achteraf wordt er gereageerd. Soms berichten gemist, en ook worden de spraakberichten soms vergeten tussentijds.
+
+* Terugvinden van steekwoorden in een spraakbericht is handig
+
+* Het kunnen skimmen van tekst is handig.
+
+#### Belangrijk voor mij!
+
+* Pre prompted. Train de AI om de samenvatting goed te maken, zodat de fouten minimaal zijn.
+
+* Sneltoets voor als een spraakbericht om te zetten, dus als er op een spraakbericht wordt geklikt dat er een menu komt om de spraakbericht samen te vatten.
