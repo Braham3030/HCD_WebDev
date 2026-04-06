@@ -10,6 +10,9 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     > header {
         display: flex;
@@ -19,6 +22,16 @@ body {
     }
 
     > main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+
+        &:has(#summarizeCheckbox:checked) .smartSummary {
+            width: 10.5em;
+            padding: 1em 1em;
+            opacity: 1;
+        }
 
         > form {
             border: 3px solid red;
@@ -29,9 +42,16 @@ body {
                 justify-content: center;
                 border: 2px solid blue;
 
+                &:has(input:checked) > legend {
+                    border-radius: 18px;
+                    box-shadow: inset 0 -20px 30px -5px red;
+                }
+
                 > legend {
-                        border: 2px solid purple;
+                    padding: 0.2em;
+                        box-shadow: inset 0 -2px 0 0 red;
                         margin: 0 auto;
+                        font-size: 1.5em;
                     }
 
                 > label {
@@ -39,6 +59,7 @@ body {
                     width: 10em;
                     height: 3em;
                     border-radius: 24px;
+                    cursor: pointer;
                     border: 4px solid green;
 
                     &::before {
@@ -56,31 +77,46 @@ body {
                     > #summarizeCheckbox {
                         appearance: none;
                     }
+
+                    &:has(input:checked) {
+                        background-color: grey;
+                        border: 4px solid green;
+                        &::before {
+                            width: 2em;
+                            height: 2em;
+                            left: 98%;
+                            transform: translate(-100%, -50%);
+                        }
+                    }
                 }
             }
         }
 
         > .contentContainer {
             display: flex;
-            align-items: center;
+            flex: 1;
+            align-items: stretch;
             justify-content: center;
+            overflow: hidden;
+            min-height: 0;
 
     > .chatItems {
         display: flex;
+        flex-direction: column;
         border: 2px solid green;
         width: 30vw;
-        height: 90vh;
 
         > ul {
             display: flex;
             align-items: center;
-            justify-content: center;
             flex-direction: column;
             gap: 0.1em;
             list-style-type: none;
             width: inherit;
             overflow: scroll;
             height: inherit;
+            overflow-y: auto;
+            flex: 1;
 
             margin: 0;
             padding: 0;
@@ -136,8 +172,84 @@ body {
     > .mainContent {
         border: 5px solid green;
         width: 70vw;
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+
+        .messageContainer {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            /* align-items: center;
+            justify-content: flex-end; */
+            flex-direction: column;
+            border: 2px solid red;
+            padding: 1em;
+            gap: 1em;
+            overflow-y: auto;
+
+            > span {
+                padding: 1em;
+                border-radius: 8px;
+                max-width: 70%;
+                flex-shrink: 0;
+            }
+
+            > .received {
+                align-self: flex-start;
+                background-color: lightgray;
+            }
+
+            > .sent {
+                align-self: flex-end;
+                background-color: lightblue;
+            }
+
+            > .messageInput {
+                margin-top: auto;
+                width: 100%;
+                display: flex;
+                gap: 0.5em;
+
+                > input {
+                    flex: 1;
+                    padding: 1em;
+                    border-radius: 8px;
+                    border: 2px solid blue;
+                    position: sticky;
+                }
+
+                > button {
+                    padding: 1em 2em;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+
+                > .smartSummary {
+                    opacity: 0;
+                    padding: 0;
+                    width: 0;
+                    height: 4em;
+                    overflow: hidden;
+                    display: flex;
+                    white-space: nowrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
     }
 }
 }
+}
+
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
 }
