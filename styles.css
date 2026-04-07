@@ -3,72 +3,85 @@
     *::after {
     box-sizing: border-box;
     transition: all 0.3s ease;
+
+    &:focus-visible {
+        outline: 8px dotted red;
+        box-shadow: 0 0 10px 4px red;
+        z-index: 9999;
+    }
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    width: 200px;
-    height: auto;
-    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     > header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2em;
-
-    > h1 {
-        font-size: 1.5em;
+        border: 2px solid red;
     }
-}
+
     > main {
+        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        min-height: 0;
+
+        &:has(#summarizeCheckbox:checked) .smartSummary {
+            width: 10.5em;
+            padding: 1em 1em;
+            opacity: 1;
+            visibility: visible;
+        }
 
         > form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            border: 3px solid red;
 
-            > .summarize {
-                border: none;
+            .summarize {
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                flex-direction: row;
+                justify-content: center;
+                border: 2px solid blue;
 
-                > legend {
-                    /* padding: 1.5em; */
-                    font-size: 1.1em;
+                &:has(input:checked) > legend {
+                    border-radius: 18px;
+                    box-shadow: inset 0 -20px 30px -5px red;
                 }
 
-                > label {
-                    display: flex;
-                    background-color: white;
-                    border: 2px solid green;
-                    border-radius: 24px;
-                    width: 6em;
-                    height: 3em;
-                    position: relative;
+                > legend {
+                    padding: 0.2em;
+                        box-shadow: inset 0 -2px 0 0 red;
+                        margin: 0 auto;
+                        font-size: 1.5em;
+                    }
 
-                    transition: border 0.8s ease-in-out, background-color 0.6s ease-in-out;
+                > label {
+                    position: relative;
+                    width: 10em;
+                    height: 3em;
+                    border-radius: 24px;
+                    cursor: pointer;
+                    border: 4px solid green;
 
                     &::before {
-                        content: "";
-                        width: 2.5em;
-                        height: 2.5em;
-                        border-radius: 50%;
-                        background-color: green;
                         position: absolute;
                         top: 50%;
                         left: 2%;
-                        transform: translate(0%, -50%);
+                        transform: translateY(-50%);
+                        content: "";
+                        width: 2em;
+                        height: 2em;
+                        background-color: red;
+                        border-radius: 50%;
                     }
 
-                    > input {
+                    > #summarizeCheckbox {
                         appearance: none;
                     }
 
@@ -76,8 +89,8 @@ body {
                         background-color: grey;
                         border: 4px solid green;
                         &::before {
-                            width: 2.3em;
-                            height: 2.3em;
+                            width: 2em;
+                            height: 2em;
                             left: 98%;
                             transform: translate(-100%, -50%);
                         }
@@ -85,5 +98,214 @@ body {
                 }
             }
         }
+
+        > .contentContainer {
+            display: flex;
+            flex: 1;
+            align-items: stretch;
+            justify-content: center;
+            overflow: hidden;
+            min-height: 0;
+
+    > .chatItems {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid green;
+        width: 30vw;
+
+        > ul {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.1em;
+            list-style-type: none;
+            width: inherit;
+            overflow: scroll;
+            height: inherit;
+            overflow-y: auto;
+            flex: 1;
+
+            margin: 0;
+            padding: 0;
+
+        > li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 6em;
+            border: 4px solid black;
+            border-radius: 4px;
+
+            > .chatIcon {
+                margin-left: 1em;
+                width: 3em;
+                height: 3em;
+                border: 3px solid red;
+                border-radius: 50%;
+            }
+
+            > span {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                border: 2px solid purple;
+                padding: 0;
+                margin: 0;
+                margin-left: 1em;
+                
+            > h2 {
+                margin: 0;
+                padding: 0;
+                /* margin: 0;
+                margin-left: 2em; */
+                /* margin-bottom: 0.5em; */
+                /* padding: 0;
+                font-size: 2.2em; */
+            }
+
+            > p {
+                margin: 0.5em 0 0 0;
+                padding: 0;
+            }
+        }
+        }
     }
+    }
+
+    > .mainContent {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+
+        > .heading {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: sticky;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 0 0 8px 8px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+            > h2 {
+                margin-left: 1em;
+                font-size: 2em;
+            }
+        }
+
+        .messageContainer {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            /* align-items: center;
+            justify-content: flex-end; */
+            flex-direction: column;
+            padding: 1em;
+            gap: 1em;
+            overflow-y: auto;
+
+            > span {
+                padding: 1em;
+                border-radius: 8px;
+                max-width: 70%;
+                flex-shrink: 0;
+
+                &:focus-visible {
+                    filter: brightness(0.85);
+                }
+            }
+
+            > .received {
+                align-self: flex-start;
+                background-color: lightgray;
+            }
+
+            > .sent {
+                align-self: flex-end;
+                background-color: lightblue;
+            }
+
+            > .audioMessage {
+                
+                > .playAudioButton {
+                border: 2px solid green;
+
+            }
+
+            > .speechSlider {
+                    -webkit-appearance: none;
+                        appearance: none;
+                        border: 2.5px solid red;
+                        border-radius: 8px;
+                        background-color: transparent;
+                        background: transparent;
+                        width: 10em;
+                        height: 5px;
+
+                    &::-webkit-slider-thumb {
+                        appearance: none;
+                        background-color: green;
+                        width: 1em;
+                        height: 2em;
+                        border-radius: 2px;
+                        
+                    }
+                }
+            }
+
+            > .messageInput {
+                margin-top: auto;
+                width: 100%;
+                display: flex;
+                gap: 0.5em;
+
+                > input {
+                    flex: 1;
+                    padding: 1em;
+                    border-radius: 8px;
+                    border: 2px solid blue;
+                    position: sticky;
+                }
+
+                > button {
+                    padding: 1em 2em;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+
+                > .smartSummary {
+                    visibility: hidden;
+                    opacity: 0;
+                    padding: 0;
+                    width: 0;
+                    height: 4em;
+                    overflow: hidden;
+                    display: flex;
+                    white-space: nowrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+}
+}
+
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
 }
