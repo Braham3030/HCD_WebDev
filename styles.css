@@ -3,6 +3,12 @@
     *::after {
     box-sizing: border-box;
     transition: all 0.3s ease;
+
+    &:focus-visible {
+        outline: 8px dotted red;
+        box-shadow: 0 0 10px 4px red;
+        z-index: 9999;
+    }
 }
 
 body {
@@ -171,11 +177,28 @@ body {
     }
 
     > .mainContent {
-        border: 5px solid green;
         width: 70vw;
         display: flex;
         flex-direction: column;
         min-height: 0;
+
+        > .heading {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: sticky;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 0 0 8px 8px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+            > h2 {
+                margin-left: 1em;
+                font-size: 2em;
+            }
+        }
 
         .messageContainer {
             flex: 1;
@@ -184,7 +207,6 @@ body {
             /* align-items: center;
             justify-content: flex-end; */
             flex-direction: column;
-            border: 2px solid red;
             padding: 1em;
             gap: 1em;
             overflow-y: auto;
@@ -194,6 +216,10 @@ body {
                 border-radius: 8px;
                 max-width: 70%;
                 flex-shrink: 0;
+
+                &:focus-visible {
+                    filter: brightness(0.85);
+                }
             }
 
             > .received {
