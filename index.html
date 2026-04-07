@@ -23,7 +23,7 @@
             </ul>
         </nav> -->
     </header>
-    <main role="banner">
+    <main role="main">
         <form aria-label="Instellingen voor samenvatten">
             <fieldset class="summarize">
                 <legend id="summaryLegend">Samenvatten</legend>
@@ -140,6 +140,12 @@
                 <span class="received">
                     <span class="screenReaderOnly">Henk zei:</span>Hey hoe gaat het met je?
                 </span>
+                <span class="received audioMessage">
+                    <span class="screenReaderOnly">Henk stuurde een spraak bericht:</span>
+
+                    <button class="playAudioButton" data-text="Het gaat goed met mij!" aria-label="Speel spraakbericht van Henk af">Afspelen</button>
+                    <input type="range" min="0" max="100" value="0" class="speechSlider" aria-label="Spoel de spraakberichten van Henk vooruit of achteruit">
+                </span>
 
                 <div class="messageInput">
                     <input type="text" placeholder="Type hier je bericht..." aria-label="Typ een nieuw bericht naar Henk">
@@ -148,9 +154,11 @@
                 </div>
             </div>
         </section>
-        </div>
+    </section>
     </main>
+    <script src="env.js"></script>
+    <script src="speechSlider.js"></script>
     <script src="script.js"></script>
-    <script src="ChromeExtensions/testBackground.js"></script>
+    <!-- <script src="ChromeExtensions/testBackground.js"></script> -->
 </body>
 </html>

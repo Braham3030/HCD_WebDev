@@ -205,6 +205,34 @@ body {
                 background-color: lightblue;
             }
 
+            > .audioMessage {
+                
+                > .playAudioButton {
+                border: 2px solid green;
+
+            }
+
+            > .speechSlider {
+                    -webkit-appearance: none;
+                        appearance: none;
+                        border: 2.5px solid red;
+                        border-radius: 8px;
+                        background-color: transparent;
+                        background: transparent;
+                        width: 10em;
+                        height: 5px;
+
+                    &::-webkit-slider-thumb {
+                        appearance: none;
+                        background-color: green;
+                        width: 1em;
+                        height: 2em;
+                        border-radius: 2px;
+                        
+                    }
+                }
+            }
+
             > .messageInput {
                 margin-top: auto;
                 width: 100%;
