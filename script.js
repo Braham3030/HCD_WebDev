@@ -2,6 +2,16 @@
 
 console.log("Hello World!");
 
+// Prevent screen reader from reading the whole page when loaded on the page
+
+document.addEventListener("DOMContentLoaded", () => {
+    const chatInput = document.getElementById(".messageInput input");
+
+    if (chatInput) {
+        chatInput.focus();
+    }
+})
+
 const apiKey = config.elevenLabsApiKey;
 const voiceId = config.elevenLabsVoiceId;
 
