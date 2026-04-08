@@ -32,6 +32,21 @@ Morgen zal hier de eerste test over komen en de handelingen van de gebruiker een
 
 Vandaag verdere itteratie over het onderwerp en verder gezocht naar methodes om de toegankelijkheid te verbeteren. Ik wil hierbij gebruk maken van chrome extension, hiermee kan ik de toegankelijkheids feature op meerdere sites laten werken. Ook kreeg ik te horen dat het handig kan zijn om de AI bepaalde samenvattingen niet te laten doen, omdat de gebruiker die juist wel helemaal wil beluistern. Dit kan opgelost worden door een knop om te zetten hiervoor.
 
+### Dag 3
+
+Vandaag verder gewerkt aan de layout van de chat website. Ik ben afgestapt van het maken van een extension en heb nu de mockup gemaakt. Ik heb een knop gemaakt voor de gebruiker om zo de AI samenvattingstool te activeren. Vervolgens kan de gebruiker de spraakberichten samen laten vatten en ze zo beter en sneller begrijpen.
+
+Ik heb ook dikke borders gemaakt voor mijzelf om de layout goed te zien en te begrijpen van de elementen. Deze borders had ik bij de test met de testpersoon er niet uitgehaald. Hier kreeg ik echter wel goede feedback op. Ook vindt de gebruiker het fijn als de elementen op het scherm lekker groot is en duidelijk is.
+
+Ik heb ook gedacht aand e accesibility van de pagina en hoe de gebruiker door de pagina kan navigeren. Hierbij heb ik verschillende aria-labels gebruikt en ook gewerkt met hidden texten die alleen opgelezen worden door de screenreader. Zo heb ik bijvoorbeeld bij de getypte chatberichten, een extra tekst toegevoegd, zodat de gebruiker erbij hoort van wie de tekst afkomstig is. Ook bij de input wordt er duidelijk weergegeven naar wie er een chatbericht wordt verstuurd.
+
+#### Bevindingen week 2
+
+* Slim samenvatten kan handig zijn voor extra functies. KIJK HIER NAAR!! 
+* Dikke borders en goede dikke fonts is beter
+* Samenvating knop met AI laten werken bij langere zinnen, bijvoorbeeld bij spraakberichten van 30 seconden of langer.
+* De aria labels zijn fijn en goed te begrijpen voor de gebruiker
+
 
 ## Voortgangsgesprek
 
