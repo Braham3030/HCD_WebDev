@@ -122,3 +122,29 @@ Deze week heb ik gewerkt aan het bedenken van een idee voor de case. Hierbij ben
 * Pre prompted. Train de AI om de samenvatting goed te maken, zodat de fouten minimaal zijn.
 
 * Sneltoets voor als een spraakbericht om te zetten, dus als er op een spraakbericht wordt geklikt dat er een menu komt om de spraakbericht samen te vatten.
+
+
+## Week 2
+
+Deze week veel gewerkt aand de optimalisatie van de mockup website. Zo zijn er veel toegankelijk toepassingen op de website toegevoegd. Deze toepassingen hebben vooral te maken met de toegankelijkheid van de gebruiker. Dit heb ik ook getest met de gebruiker, waarna ik positieve feedback erover heb gekregen. Een voorbeeld van de toepassing is het aangeven met wie de gebruiker aan het appen is, als er op de input wordt geklikt. Ook kunnen de vorige tekstberichten ge-tabbed worden, waardoor de gebruiker de verstuurde berichten terug kan horen. En uiteraard kan de gebruiker niet goed zien welke tekst bericht door wie is gestuurd. Hiervoor heb ik als oplossing om een verstopte tekst erbij toe te voegen, deze is alleen te lezen door de screen reader.
+
+Ik heb ook de (fake) spraakbericht erin toegevoegd, deze werkt echter nog niet. Dit vanwege het feit dat de fetch naar de api niet wordt goedgekeurd.
+
+Ook had ik de borders dik gemaakt op de pagina, dit had ik gedaan voor mijzelf om de layout goed te kunnen bepalen. Deze heb ik bij de test erin gelaten. Ik kreeg hier echter goede feedback over terug. de gebruiker vind dit fijner, omdat zo onderscheid tussen bepaalde delen beter te zien is. De lettertype kan dan ook groter gemaakt worden, zodat de gebruiker de teksten ook beter kan lezen. Deze bevindingen zijn op zicht, omdat de gebruiker wel een klein beetje kan zien, deze zicht gebruikt de gebruiker om laatste extra informatie uit de wereld, en in mijn geval, de website te verkrijgen.
+
+
+Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit getest kan worden met de gebruiker. 
+
+
+#### Week 2:
+
+* Alt shift D kan handig zijn als shortcut
+
+
+##### Voor mij!!
+* slim samenvatten kan handig zijn voor extra functies. KIJK HIER NAAR!!
+* Dikke borders en goede dikke fonts is beter
+
+* Samenvating knop met AI laten werken bij langere zinnen, bijvoorbeeld * bij spraakberichten van 30 seconden of langer.
+
+* De aria labels zijn fijn en goed te begrijpen voor de gebruiker
