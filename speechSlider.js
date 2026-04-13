@@ -1,3 +1,12 @@
+
+
+let currentAudio = null;
+let rangeInput = document.querySelector('input[name="progress"]');
+
+
+
+
+
 // ONDERSTAANDE CODE MAG JE GEBRUIKEN
 // NIETS AANPASSEN
 
@@ -18,6 +27,14 @@ ranges.forEach(range => {
 	
 	// the custom property is updated when the input is changed
 	range.oninput = () => {
-		updateRange(range)
+		updateRange(range);
+
+
+		// If the current audio is playing the range of the input will be updated. The time will also be updated accordingly
+		if (currentAudio && range === rangeInput) {
+			const percentage = range.value / 100;
+			currentAudio.currentTime = percentage * currentAudio.duration;
+		}
 	};
 });
+
