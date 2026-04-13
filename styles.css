@@ -84,10 +84,11 @@ body {
                 > label {
                     position: relative;
                     width: 15em;
-                    height: 4em;
-                    border-radius: 32px;
+                    height: 4.5em;
+                    border-radius: 38px;
                     cursor: pointer;
                     border: 8px solid blue;
+                    overflow: hidden;
 
                     &::before {
                         position: absolute;
@@ -95,10 +96,15 @@ body {
                         left: 2%;
                         transform: translateY(-50%);
                         content: "";
-                        width: 2em;
-                        height: 2em;
+                        width: 3em;
+                        height: 3em;
                         background-color: orange;
                         border-radius: 50%;
+
+                        font-size: 12px;
+                        font-weight: 900;
+
+                        transition: left 0.4s ease, transform 0.4s ease, font-size 0.6s ease-in-out 0.2s, width 0.3s ease-in-out 0.1s, height 0.3s ease-in-out 0.1s;
                     }
 
                     > #summarizeCheckbox {
@@ -109,10 +115,20 @@ body {
                         background-color: grey;
                         border: 8px solid blue;
                         &::before {
-                            width: 2em;
-                            height: 2em;
-                            left: 98%;
-                            transform: translate(-100%, -50%);
+                            content: "Samenvatten aan";
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 22px;
+                            font-weight: 700;
+                            margin: 0;
+                            padding: 0;
+                            width: inherit;
+                            height: inherit;
+                            border-radius: inherit;
+                            left: 50%;
+                            transform-origin: center;
+                            transform: translate(-50%, -50%);
                         }
                     }
                 }
