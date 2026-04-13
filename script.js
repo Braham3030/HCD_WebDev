@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-const apiKey = config.elevenLabsApiKey;
+// const apiKey = config.elevenLabsApiKey;
 const voiceId = config.elevenLabsVoiceId;
 
 // Speech message
@@ -68,22 +68,90 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
 
     }
-
-    // audioPlayer.forEach(button => {
-    //     button.addEventListener("click", async () => {
-            
-    //         const originalText = button.textContent;
-
-    //         // Loading state
-    //         button.textContent = "Laden...";
-    //         button.setAttribute("disabled", "true");
-    //         // Prevents multiple clicks while loading
-    //         button.disabled = true;
-
-           
-    //     })
-    // })
 })
+
+// Fake AI summary
+
+document.addEventListener("DOMContentLoaded", () => {
+    const summaryButton = document.querySelector(".smartSummary");
+    const audioPlayer = document.querySelector("audio[data-text]");
+
+    if (summaryButton && audioPlayer) {
+        summaryButton.addEventListener("click", () => {
+            summaryButton.innerText = "Bezig met samenvatten...";
+            summaryButton.setAttribute("aria-busy", "true");
+
+            audioPlayer.pause();
+
+            // window.speechSynthesis.cancel() is used to stop any other summaries that are currently playing
+            window.speechSynthesis.cancel();
+
+            setTimeout(() => {
+                // Text to Speech text
+                const fakeSummary = "Samenvatting van het spraakbericht van Henk: Henk heeft kleren gekocht";
+
+                const speech = new SpeechSynthesisUtterance(fakeSummary);
+                speech.lang = "nl-NL";
+                speech.rate = 1.5;
+
+                speech.onend = () => {
+                    summaryButton.innerText = "Slim samenvatten";
+                    summaryButton.setAttribute("aria-busy", "false");
+                };
+
+                window.speechSynthesis.speak(speech);
+            }, 500)
+        })
+    }
+})
+
+
+// submit button prevent default behavior
+
+const form = document.querySelector(".messageInput");
+const sendButton = form.querySelector(".sendButton");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const originalText = sendButton.innerText;
+
+    sendButton.innerText = "Sturen...";
+    sendButton.setAttribute("aria-busy", "true");
+
+    setTimeout(() => {
+        sendButton.innerText = originalText;
+        sendButton.setAttribute("aria-busy", "false");
+    }, 1000)
+})
+
+
+// Summary button announcer
+
+const summarizeCheckbox = document.getElementById("summarizeCheckbox");
+const announcer = document.getElementById("announcer");
+
+if (summarizeCheckbox && announcer) {
+    summarizeCheckbox.addEventListener("change", (event) => {
+        if (event.target.checked) {
+            announcer.textContent = "Samenvatten is ingeschakeld. De knop om spraakberichten samen te vatten staat nu in de chat naast elke spraakbericht. Deze knop heet 'Slim samenvatten'. Wanneer je op deze knop klikt, zal er een korte samenvatting worden gegeven.";
+        } else {
+            announcer.textContent = "Samenvatten is uitgeschakeld";
+        }
+
+        setTimeout(() => {
+            announcer.textContent = "";
+        }, 3000)
+    })
+}
+
+
+
+
+
+
+
+
 
 // Source for audio customization:
 // https://mimo.org/glossary/html/audio-tag
