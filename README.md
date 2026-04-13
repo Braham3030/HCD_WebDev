@@ -48,6 +48,12 @@ Ik heb ook gedacht aand e accesibility van de pagina en hoe de gebruiker door de
 * De aria labels zijn fijn en goed te begrijpen voor de gebruiker
 
 
+### Dag 4
+
+Ik heb de layout van de chatapp verder aangepast, omdat de gebruiker de app een klein beetje kan zien. Hij vond het bij de chatapp erg fijn dat de borders lekker dik zijn en ook goed zichtbaar zijn. Hiemee kan hij goed onderscheid maken tussen de content. Verder heb ik de spraakberichten werkend gekregen en kan dit ook getest worden. De samenvattingsknop werkt ook. Deze werkt uiteraard als prototype, en bevat dus een text die naar speech wordt vertaald via de javascript. Ook de lettertypes zijn aangepast en een stuk groter gemaakt voor mijn testpersoon. De tab heb ik extra functioneel gemaakt door er een font-size increase aan te geven. Dit zal ik ook gaan testen met de gebruiker. 
+
+Echter zijn er wel wat problemen met de natuurlijke spraakbericht, omdat deze uit elevenlabs komt heb ik hier credits voor gekregen. Ik wil echter een grotere spraakbericht testen, omdat de samenvatting vooral nuttig is bij lange berichten.
+
 ## Voortgangsgesprek
 
 ### Week 1
@@ -148,3 +154,12 @@ Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit ge
 * Samenvating knop met AI laten werken bij langere zinnen, bijvoorbeeld * bij spraakberichten van 30 seconden of langer.
 
 * De aria labels zijn fijn en goed te begrijpen voor de gebruiker
+
+
+## Bronnen
+
+### Natuurlijke spraak en setup
+[ElevenLabs](https://elevenlabs.io/app/home)
+
+### Onend gebruik voor als de audio afgelopen is
+[Onend](https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/ended_event)
