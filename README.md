@@ -61,7 +61,7 @@ Echter zijn er wel wat problemen met de natuurlijke spraakbericht, omdat deze ui
 Deze week heb ik gewerkt aan het bedenken van een idee voor de case. Hierbij ben ik uitgekomen op het gebruik van extensies, omdat extensies op elke website actief gebruikt kan worden. Ook is er een user test uitgevoerd met de eindgebruiker. Hier zijn relevante punten uit voor gekomen, zoals hieronder te zien is.
 
 
-#### Week 1:
+#### Week 1 user test:
 
 * De aandoening is genetisch.
 
@@ -142,7 +142,7 @@ Ook had ik de borders dik gemaakt op de pagina, dit had ik gedaan voor mijzelf o
 Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit getest kan worden met de gebruiker. 
 
 
-#### Week 2:
+#### Week 2 user test:
 
 * Alt shift D kan handig zijn als shortcut
 
@@ -151,9 +151,30 @@ Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit ge
 * slim samenvatten kan handig zijn voor extra functies. KIJK HIER NAAR!!
 * Dikke borders en goede dikke fonts is beter
 
-* Samenvating knop met AI laten werken bij langere zinnen, bijvoorbeeld * bij spraakberichten van 30 seconden of langer.
+* Samenvating knop met AI laten werken bij langere zinnen, bijvoorbeeld bij spraakberichten van 30 seconden of langer.
 
 * De aria labels zijn fijn en goed te begrijpen voor de gebruiker
+
+
+
+### Week 3 user test:
+
+* Bewegende schermen is fijn om visueel de veranderingen te zien. Bijvoorbeeld bij het klikken op een knop dat de knop uitbreid of iets anders gebeurd.
+* Extra stappen met knoppen bijvoorbeeld kan onhandig zijn, als de gebruiker vaak terug moet navigeren om bepaalde instellingen aan te passen.
+
+#### Voor mij!
+
+* Samenvatten naast de knop korter maken kwa naam.
+
+* Goed opletten dat de vergroting met tab de pagina niet verschuift
+
+* De verschillende chat personen in de linker menu mogen iets groter met teksten. Borders zijn al goed. De tab door de items mogen beter de status van de tab aangeven. 
+
+* Samenvatting knop bovenin de pagina heeft een handige functie. Deze knop laat na het klikken weten waar de samenvatting gemaakt kan worden en wat er gebeurd met de knop. Dit geeft goede feedforward.
+
+* De layout een klein beetje aanpassen, omdat de pagina best wel ingezoomd is. Dit is wel fijn voor de gebruiker, maar niet mooi in uiterlijk.
+
+* De knop naast de audiobericht vat het spraakbericht samen, deze samenvatting conflicteert met de screenreader. Inplaats van het samenvatten vanuit de script, is het beter om de screenreader van Berend dit uit te spreken.  Dus de tekst voor de samenvatting moet niet voorgelezen worden door de script, maar door de screenreader van Berend.
 
 
 ## Bronnen
