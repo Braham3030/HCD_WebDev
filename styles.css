@@ -30,9 +30,10 @@ body {
         justify-content: center;
         align-items: center;
         border: 8px solid red;
+        height: 5.5em;
 
         > h1 {
-            font-size: 48px;
+            font-size: 52px;
             font-weight: 900;
         }
     }
