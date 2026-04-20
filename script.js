@@ -118,11 +118,10 @@ const announcer = document.getElementById("announcer");
 if (summarizeCheckbox && announcer) {
     summarizeCheckbox.addEventListener("change", (event) => {
         if (event.target.checked) {
-            announcer.textContent = "Samenvatten is ingeschakeld. De knop om spraakberichten samen te vatten staat nu in de chat naast elke spraakbericht. Deze knop heet 'Slim samenvatten'. Wanneer je op deze knop klikt, zal er een korte samenvatting worden gegeven.";
+            announcer.textContent = "Samenvatten is ingeschakeld. De knop om spraakberichten samen te vatten staat nu in de chat naast elke spraakbericht. Deze knop heet 'Vat samen'. Wanneer je op deze knop klikt, zal er een korte samenvatting worden gegeven.";
         } else {
             announcer.textContent = "Samenvatten is uitgeschakeld";
         }
-
         setTimeout(() => {
             announcer.textContent = "";
         }, 3000)
