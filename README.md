@@ -67,8 +67,6 @@ Vandaag layout aangepast, zodat de de chatberichten beter in beeld blijven voor 
 <img width="1512" height="861" alt="image" src="https://github.com/user-attachments/assets/17550f8a-4c09-40f4-a26a-ae1f8d062484" />
 
 
-  
-
 ## Voortgangsgesprek
 
 ### Week 1
@@ -138,11 +136,19 @@ Deze week heb ik gewerkt aan het bedenken van een idee voor de case. Hierbij ben
 
 * Het kunnen skimmen van tekst is handig.
 
-#### Belangrijk voor mij!
+##### Belangrijk voor mij!
 
 * Pre prompted. Train de AI om de samenvatting goed te maken, zodat de fouten minimaal zijn.
 
 * Sneltoets voor als een spraakbericht om te zetten, dus als er op een spraakbericht wordt geklikt dat er een menu komt om de spraakbericht samen te vatten.
+
+
+#### Layout en functies website Week 1
+
+* Hieronder staat de chatapp zoals in week 1 gemaakt. In deze week heb ik de layout gemaakt voor de gebruiker en kan dit ook getest worden. De gebruiker gaf hierbij aan dat hij de dikkere borders fijn vindt om te gebruiken en dat graag erin wilt houden. De dikkere borders had ik in eerste instantie op de website gehouden, omdat ik zo goed kan zien wst de ruimte is die elk element inneemt. Verder zitten hier vooral statische elementen in die wel animeren en mee geklikt kan worden. Deze elementen werken nu nog niet. De aanpassingen hebb ik gemaakt na de user test, omdat de user test een belanrijke test is om te kijken wat de user belangrijk vindt en handig vindt om te gebruiken.
+
+<img width="1512" height="858" alt="image" src="https://github.com/user-attachments/assets/2dd9ef4d-eae8-449f-aec3-298a9bd098a9" />
+
 
 
 ## Week 2
@@ -170,6 +176,18 @@ Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit ge
 
 * De aria labels zijn fijn en goed te begrijpen voor de gebruiker
 
+
+#### Layout en functies website Week 2
+
+* In week 2 heb ik bepaalde aanpassingen gedaan aan de chat app. Zo heb ik ervoor gezorgd (op basis van user feedback) dat de borders nog dikker zijn. Ook is de "font-size" vergroot voor de user. De user wilt namelijk (voor zover de user kan zien) het scherm zoveel mogelijk kunnen gebruiken zonder de hulp van screen reader, denk hierbij aan het navigeren tussen elementen. Wel moet de gebruiker de tab functie gebruiken om de teksten voor te laten lezen.
+
+* Ook is de audioplayer en de samenvatting knop actief gemaakt hier. De samanevatting knop geeft de samenvatting van de audioberichten weer.
+
+* De locatie van de samenvatting knop is verplaats naast de audiomessage. Hierdoor is het voor de gebruiker duidelijker wat de knop doet en hoort het ook bij het bericht samen. Ook is de activatie vand samenvattingknop bovenaan de pagina om de knop in of uit te schakelen naast de audio message. Hierdoor hoeft de gebruiker minder te tabben als de gebruiker geen samenvatting wilt en veel audioberichten binnenkrijgt. De knop bovenaan geeft ook een kort gesproken description van de locatie van de samenvatting knop en wat het doet.
+
+* Ook het tabben door het scherm is (letterlijk) enorm veranderd. Bij het tabben vergroten elementen en krijgt het een rode border. Deze rode border bestaat uit dots, omdat de elemeten al een border heeft. Hierdoor zal het voor de gebruiker duidelijker zijn welk element er gekozen is. Ook wordt de font-size groter, waardoor de gebruiker de tekst of element nog wel iets beter kan zien.
+
+<img width="1512" height="867" alt="image" src="https://github.com/user-attachments/assets/db4e9764-ecde-4f75-bd0b-a0335a2d2c77" />
 
 
 ### Week 3 user test:
