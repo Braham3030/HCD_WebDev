@@ -72,38 +72,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Fake AI summary
 
-document.addEventListener("DOMContentLoaded", () => {
-    const summaryButton = document.querySelector(".smartSummary");
-    const audioPlayer = document.querySelector("audio[data-text]");
+const smartSummary = document.querySelector(".smartSummary");
+const announcerSummary = document.getElementById("announcerSummary");
 
-    if (summaryButton && audioPlayer) {
-        summaryButton.addEventListener("click", () => {
-            summaryButton.innerText = "Bezig met samenvatten...";
-            summaryButton.setAttribute("aria-busy", "true");
+if (smartSummary && announcerSummary) {
+    smartSummary.addEventListener("change", (event) => {
+        if (event.target.checked) {
+            announcerSummary.textContent = "Samenvatting van het spraakbericht van Henk: Henk heeft kleren gekocht en is blij met zijn aankoop.";
+        } else {
+            announcerSummary.textContent = "Samenvatten is uitgeschakeld";
+        }
 
-            audioPlayer.pause();
-
-            // window.speechSynthesis.cancel() is used to stop any other summaries that are currently playing
-            window.speechSynthesis.cancel();
-
-            setTimeout(() => {
-                // Text to Speech text
-                const fakeSummary = "Samenvatting van het spraakbericht van Henk: Henk heeft kleren gekocht";
-
-                const speech = new SpeechSynthesisUtterance(fakeSummary);
-                speech.lang = "nl-NL";
-                speech.rate = 1.5;
-
-                speech.onend = () => {
-                    summaryButton.innerText = "Slim samenvatten";
-                    summaryButton.setAttribute("aria-busy", "false");
-                };
-
-                window.speechSynthesis.speak(speech);
-            }, 500)
-        })
-    }
-})
+        setTimeout(() => {
+            announcerSummary.textContent = "";
+        }, 3000)
+    })
+}
 
 
 // submit button prevent default behavior

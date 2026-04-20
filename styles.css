@@ -92,8 +92,8 @@ body {
 
                 > label {
                     position: relative;
-                    width: 14em;
-                    height: 3.5em;
+                    width: 16em;
+                    height: 4.5em;
                     border-radius: 38px;
                     cursor: pointer;
                     border: 8px solid blue;
@@ -105,8 +105,8 @@ body {
                         left: 2%;
                         transform: translateY(-50%);
                         content: "";
-                        width: 2.5em;
-                        height: 2.5em;
+                        width: 3.5em;
+                        height: 3.5em;
                         background-color: orange;
                         border-radius: 50%;
 
@@ -377,11 +377,21 @@ body {
                     font-size: 24px;
                     color: red;
                     font-weight: 700;
+                    cursor: pointer;
 
                     border-radius: 12px;
                     border: 6px solid green;
 
                     transition: padding 0.3s ease-in-out, width 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+                    
+
+                     &:focus-visible {
+                        font-size: 34px;
+                        font-weight: 900;
+                        background-color: grey;
+                        text-shadow: 0 0 5px black;
+                     }
                 }
             }
         }
@@ -415,6 +425,8 @@ body {
                     &:focus-visible {
                         font-size: 42px;
                         font-weight: 900;
+                        background-color: grey;
+                        text-shadow: 0 0 5px white;
                 }
                 }
 
