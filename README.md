@@ -54,6 +54,21 @@ Ik heb de layout van de chatapp verder aangepast, omdat de gebruiker de app een 
 
 Echter zijn er wel wat problemen met de natuurlijke spraakbericht, omdat deze uit elevenlabs komt heb ik hier credits voor gekregen. Ik wil echter een grotere spraakbericht testen, omdat de samenvatting vooral nuttig is bij lange berichten.
 
+### Dag 5
+
+Vandaag layout aangepast, zodat de de chatberichten beter in beeld blijven voor de gebruiker. Ik heb verder geïtereerd op de feedback van de gebruiker. Zo heb ik de layout aangepast, de knop voor "slim samenvatten" heb ik een kortere naam gegeven, de samenvatten knop naast de audioberichten gaf de samenvatting van het audiobericht met conflicten tussen screenreaders.
+
+* "Slim samenvatten" knop heet nu "vat samen". Dit is korter en ook duidelijk voor de gebruiker om te gebruiken.
+<img width="1512" height="862" alt="image" src="https://github.com/user-attachments/assets/40177146-8592-4c57-9861-54e6f26d19cf" />
+
+* De "vat samen" knop naast het audiobericht heb ik in de script aangepast. Nu leest de screen reader van de gebruiker de tekst voor inplaats van mijn eigen screen reader.
+* De layout is aangepast, zodat de gebruiker de content beter op het scherm krijgt. De gebruiker ziet hierdoor een grotere content scherm, waarop de gebruiker kan chatten met anderen en is de "samenvatten" bovenaan de pagina opgeschoven om ruimte te maken.
+
+<img width="1512" height="861" alt="image" src="https://github.com/user-attachments/assets/17550f8a-4c09-40f4-a26a-ae1f8d062484" />
+
+
+  
+
 ## Voortgangsgesprek
 
 ### Week 1
