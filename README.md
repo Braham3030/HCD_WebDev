@@ -210,6 +210,15 @@ Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit ge
 * De knop naast de audiobericht vat het spraakbericht samen, deze samenvatting conflicteert met de screenreader. Inplaats van het samenvatten vanuit de script, is het beter om de screenreader van Berend dit uit te spreken.  Dus de tekst voor de samenvatting moet niet voorgelezen worden door de script, maar door de screenreader van Berend.
 
 
+#### Layout en functies website Week 3
+
+* Deze week heb ik veranderingen doorgevoerd die te maken hebben met conflicten en een klein beetje met layout. Ik heb de "slim samenvatten" knop hier korter opgeschreven. Dit is geworden "vat samen".
+
+* Ook heb ik layout aanpassingen doorgevoerd, zo heb ik het elemeent waarin de gebruiker kan typen en berichten van de persoon terug kan lezen vergroot. Dit is namelijk de plek waar de gebruiker meer op zal navigeren. Dit heb ik uitgevoerd door de "samenvatten" knop boven in het midden, naar links te verplaatsen en kleiner erin te zetten. Hierdoor neemt de knop minder ruimte in, terwijl de knop wel goed zichtbaar en groot blijft. Deze lege ruimte die erdoor is onstaan heb ik opgevuld met de chat zelf.
+
+<img width="1512" height="862" alt="image" src="https://github.com/user-attachments/assets/40177146-8592-4c57-9861-54e6f26d19cf" />
+
+
 ## Bronnen
 
 ### Natuurlijke spraak en setup
