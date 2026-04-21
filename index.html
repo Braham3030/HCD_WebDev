@@ -11,6 +11,7 @@
         <h1>Chat</h1>
     </header>
     <div id="announcer" class="screenReaderOnly" aria-live="polite"></div>
+    <div id="announcerSummary" class="screenReaderOnly" aria-live="polite"></div>
     <main role="main">
         <form aria-label="Instellingen voor samenvatten">
             <fieldset class="summarize">
@@ -133,8 +134,8 @@
 
                     <!-- <button class="playAudioButton" data-text="Heb je nog iets leuks gedaan dit weekend? Ik ben namelijk naar het centrum geweest en heb daar veel nieuwe producten gehaald. Zo heb ik nieuwe kleding weten te scoren. Ik heb 2 broeken gekocht en 3 shirts, allemaal in de aanbieding. Ik ben daar echt heel blij mee. Ik ben ook even langs de supermarkt gegaan, omdat ik boodschappen moest doen. Het was dus een vrij druk weekend. Zullen we binnenkort weer even afspreken?" aria-label="Speel spraakbericht van Henk af">▶️</button>
                     <input type="range" min="0" max="100" value="0" class="speechSlider" name="progress" aria-label="Spoel de spraakberichten van Henk vooruit of achteruit"> -->
-                    <audio controls id="audioSpeech" aria-label="Spraakbericht van Henk" data-text="Test"></audio>
-                    <button class="smartSummary" aria-label="Vraag AI om de spraakberichten van Henk samen te vatten">Slim samenvatten</button>
+                    <audio controls id="audioSpeech" aria-label="Spraakbericht van Henk" data-text="Heb je nog iets leuks gedaan dit weekend? Ik heb nieuwe producten gehaald. Zo heb ik nieuwe kleding weten te scoren. Ik heb een aantal broeken gekocht. Ik ben ook even langs de supermarkt gegaan, omdat ik boodschappen moest doen. Het was dus een vrij druk weekend."></audio>
+                    <button class="smartSummary" aria-label="Vraag AI om de spraakberichten van Henk samen te vatten">Vat samen</button>
                 </span>
 
                 
