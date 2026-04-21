@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-// const apiKey = config.elevenLabsApiKey;
+const apiKey = config.elevenLabsApiKey;
 const voiceId = config.elevenLabsVoiceId;
 
 // Speech message
