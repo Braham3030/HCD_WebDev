@@ -76,16 +76,17 @@ const smartSummary = document.querySelector(".smartSummary");
 const announcerSummary = document.getElementById("announcerSummary");
 
 if (smartSummary && announcerSummary) {
-    smartSummary.addEventListener("change", (event) => {
-        if (event.target.checked) {
-            announcerSummary.textContent = "Samenvatting van het spraakbericht van Henk: Henk heeft kleren gekocht en is blij met zijn aankoop.";
-        } else {
-            announcerSummary.textContent = "Samenvatten is uitgeschakeld";
-        }
+    smartSummary.addEventListener("click", () => {
+        announcerSummary.textContent = "Samenvatting van het spraakbericht van Henk: Henk heeft kleren gekocht en is blij met zijn aankoop.";
+        // if (event.target.checked) {
+        //     announcerSummary.textContent = "Samenvatting van het spraakbericht van Henk: Henk heeft kleren gekocht en is blij met zijn aankoop.";
+        // } else {
+        //     announcerSummary.textContent = "Samenvatten is uitgeschakeld";
+        // }
 
-        setTimeout(() => {
-            announcerSummary.textContent = "";
-        }, 3000)
+        // setTimeout(() => {
+        //     announcerSummary.textContent = "";
+        // }, 3000)
     })
 }
 
