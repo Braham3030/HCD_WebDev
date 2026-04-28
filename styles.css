@@ -2,7 +2,7 @@
 *, *::before, 
     *::after {
     box-sizing: border-box;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 
     &:focus-visible {
         outline: 16px dashed red;
@@ -100,7 +100,7 @@ body {
                         font-size: 1.8em;
                         font-weight: 500;
 
-                        transition: font-weight 0.8s ease-in-out, font-size 0.3s ease, box-shadow 0.3s ease;
+                        transition: font-weight 0.8s cubic-bezier(0.33, 0.72, 0, 1.18), font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), box-shadow 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
                     }
 
                 > label {
@@ -123,10 +123,10 @@ body {
                         background-color: orange;
                         border-radius: 50%;
 
-                        font-size: 12px;
+                        font-size: 14px;
                         font-weight: 900;
 
-                        transition: left 0.4s ease, transform 0.4s ease, font-size 0.6s ease-in-out 0.2s, width 0.3s ease-in-out 0.1s, height 0.3s ease-in-out 0.1s;
+                        transition: left 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), transform 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), font-size 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s, width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18) 0.1s, height 0.3s cubic-bezier(0.33, 0.72, 0, 1.18) 0.1s;
                     }
 
                     > #summarizeCheckbox {
@@ -141,7 +141,7 @@ body {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            font-size: 22px;
+                            font-size: 28px;
                             font-weight: 700;
                             margin: 0;
                             padding: 0;
@@ -309,9 +309,12 @@ body {
                 font-weight: 900;
                 padding: 0.5em;
                 border-radius: 8px;
-                max-width: 70%;
+                min-width: 10%;
+                max-width: 80%;
                 list-style: none;
                 /* flex-shrink: 0; */
+
+                transition: all 0.2s cubic-bezier(0.33, 0.72, 0, 1.18);
 
                 &:focus-visible {
                     filter: brightness(0.85);
@@ -503,7 +506,7 @@ body {
 }
 &:has(.descriptionContainer[open]) .messageContainer > .audioMessage {
     /* height: 100%; */
-    width: 28em;
+    width: 30em;
     transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 }
