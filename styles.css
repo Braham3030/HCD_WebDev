@@ -13,7 +13,7 @@
 
 :root {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -304,11 +304,13 @@ body {
             transition: all 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
 
             > li {
-                font-size: 28px;
+                font-size: 30px;
+                letter-spacing: 0.02em;
                 font-weight: 900;
                 padding: 0.5em;
                 border-radius: 8px;
                 max-width: 70%;
+                list-style: none;
                 /* flex-shrink: 0; */
 
                 &:focus-visible {
@@ -425,14 +427,20 @@ body {
                     > p {
                         margin: 0em;
                         font-size: 22px;
+                        overflow-wrap: break-word;
+                        word-break: break-word;
 
                         transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
+                    }
+
+                    &:focus-within {
+                        outline: 4px solid yellow;
                     }
                 }
 
                 > .descriptionContainer[open] {
                     justify-content: flex-start;
-                    max-height: 20em;
+                    max-height: 23em;
                     width: 30em;
                     border: 12px solid red;
 
@@ -447,6 +455,8 @@ body {
 
                     > p {
                             font-size: 28px;
+                            line-height: 1.6;
+                            letter-spacing: 0.02em;
                             margin: 0.5em;
 
                             transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
