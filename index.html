@@ -104,42 +104,42 @@
                 <h2>Henk</h2>
             </header>
 
-            <div class="messageContainer" role="log" aria-live="polite" aria-label="Chatgeschiedenis">
-                <span class="sent" tabindex="0">
+            <ul class="messageContainer" role="log" aria-live="polite" aria-label="Chatgeschiedenis">
+                <li class="sent" tabindex="0">
                     <span class="screenReaderOnly">Jij zei:</span>Na het eten kom ik!
-                </span>
-                <span class="received" tabindex="0">
+                </li>
+                <li class="received" tabindex="0">
                     <span class="screenReaderOnly">Henk zei:</span> Waar ben je?
-                </span>
-                <span class="sent" tabindex="0">
+                </li>
+                <li class="sent" tabindex="0">
                     <span class="screenReaderOnly">Jij zei:</span>Ik kom eraan!
-                </span>
-                <span class="sent" tabindex="0">
+                </li>
+                <li class="sent" tabindex="0">
                     <span class="screenReaderOnly">Jij zei:</span>Wat ben je aan het doen?
-                </span>
-                <span class="received" tabindex="0">
+                </li>
+                <li class="received" tabindex="0">
                     <span class="screenReaderOnly">Henk zei:</span> niet veel! Bij jou?
-                </span>
-                <span class="sent" tabindex="0">
+                </li>
+                <li class="sent" tabindex="0">
                     <span class="screenReaderOnly">Jij zei:</span>Heb iets leuks gezien
-                </span>
-                <span class="sent" tabindex="0">
+                </li>
+                <li class="sent" tabindex="0">
                     <span class="screenReaderOnly">Jij zei:</span>haha grappig
-                </span>
-                <span class="received" tabindex="0">
+                </li>
+                <li class="received" tabindex="0">
                     <span class="screenReaderOnly">Henk zei:</span>Hey hoe gaat het met je?
-                </span>
-                <span class="received audioMessage">
+                </li>
+                <li class="received audioMessage">
                     <span class="screenReaderOnly">Henk stuurde een spraak bericht:</span>
-
-                    <!-- <button class="playAudioButton" data-text="Heb je nog iets leuks gedaan dit weekend? Ik ben namelijk naar het centrum geweest en heb daar veel nieuwe producten gehaald. Zo heb ik nieuwe kleding weten te scoren. Ik heb 2 broeken gekocht en 3 shirts, allemaal in de aanbieding. Ik ben daar echt heel blij mee. Ik ben ook even langs de supermarkt gegaan, omdat ik boodschappen moest doen. Het was dus een vrij druk weekend. Zullen we binnenkort weer even afspreken?" aria-label="Speel spraakbericht van Henk af">▶️</button>
-                    <input type="range" min="0" max="100" value="0" class="speechSlider" name="progress" aria-label="Spoel de spraakberichten van Henk vooruit of achteruit"> -->
                     <audio controls id="audioSpeech" aria-label="Spraakbericht van Henk" data-text="Heb je nog iets leuks gedaan dit weekend? Ik heb nieuwe producten gehaald. Zo heb ik nieuwe kleding weten te scoren. Ik heb een aantal broeken gekocht. Ik ben ook even langs de supermarkt gegaan, omdat ik boodschappen moest doen. Het was dus een vrij druk weekend."></audio>
                     <button class="smartSummary" aria-label="Vraag AI om de spraakberichten van Henk samen te vatten">Vat samen</button>
-                </span>
+                    <details class="descriptionContainer">
+                        <summary class="descriptionTitle">Descriptie</summary>
+                        <p class="descriptionText" tabindex="-1">Heb je nog iets leuks gedaan dit weekend? Ik ben namelijk naar het centrum geweest en heb daar veel nieuwe producten gehaald. Zo heb ik nieuwe kleding weten te scoren. Ik heb 2 broeken gekocht en 3 shirts, allemaal in de aanbieding. Ik ben daar echt heel blij mee. Ik ben ook even langs de supermarkt gegaan, omdat ik boodschappen moest doen. Het was dus een vrij druk weekend. Zullen we binnenkort weer even afspreken?</p>
+                    </details>
+                </li>
 
-                
-            </div>
+            </ul>
             <form class="messageInput" aria-label="Typ een nieuw bericht naar Henk">
                     <input type="text" placeholder="Type hier je bericht..." aria-label="Typ een nieuw bericht naar Henk">
                     <!-- <button class="smartSummary" aria-label="Vraag AI om de spraakberichten van Henk samen te vatten">Slim samenvatten</button> -->

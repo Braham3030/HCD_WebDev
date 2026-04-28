@@ -52,8 +52,21 @@ body {
         &:has(#summarizeCheckbox:checked) .smartSummary {
             width: auto;
             padding: 1.2em;
+            height: 2.3em;
             opacity: 1;
             visibility: visible;
+
+            top: 50%;
+            right: 50%;
+            transform: translate(5%, 0%);
+            transform-origin: center left;
+
+            transition: padding 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), height 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), width 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), opacity 0.2s cubic-bezier(0.33, 0.72, 0, 1.18), visibility 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), transform 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+        }
+
+        &:has(#summarizeCheckbox:checked) .audioMessage {
+            width: 28em;
         }
 
         > form {
@@ -192,8 +205,12 @@ body {
 
             &:focus-visible {
                 border: 16px solid red;
-                background-color: grey;
-                font-size: 22px;
+                background-color: rgb(197, 197, 197);
+                /* font-size: 22px; */
+
+                > .chatIcon {
+                    background-color: red;
+                }
             }
 
             > .chatIcon {
@@ -274,6 +291,7 @@ body {
         .messageContainer {
             flex: 1;
             width: 100%;
+            height: 100%;
             display: flex;
             /* align-items: center;
             justify-content: flex-end; */
@@ -281,14 +299,17 @@ body {
             padding: 1em;
             gap: 1em;
             overflow-y: auto;
+            /* scroll-behavior: smooth; */
 
-            > span {
+            transition: all 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+            > li {
                 font-size: 28px;
                 font-weight: 900;
                 padding: 0.5em;
                 border-radius: 8px;
                 max-width: 70%;
-                flex-shrink: 0;
+                /* flex-shrink: 0; */
 
                 &:focus-visible {
                     filter: brightness(0.85);
@@ -309,8 +330,12 @@ body {
             > .audioMessage {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                gap: 0.1em;
+                justify-content: flex-start;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 0.3em;
+                width: 21em;
+                /* max-width: 30em; */
 
                 > audio {
                     width: 20em;
@@ -318,6 +343,8 @@ body {
                     border: 6px solid green;
                     border-radius: 28px;
                     background-color: transparent;
+
+                    anchor-name: --smartSummary-button-anchor;
 
                     &::-webkite-media-controls-mute-button,
                     &::-webkit-media-controls-volume-slider-container,
@@ -333,42 +360,19 @@ body {
                         width: calc(100% + 30px);
                     }
                 }
-                
-                /* > .playAudioButton {
-                border: 6px solid green;
-                border-radius: 16px;
-                background-color: transparent;
-                padding: 0;
-                font-size: 36px;
-
-            }
-
-            > .speechSlider {
-                    -webkit-appearance: none;
-                        appearance: none;
-                        border: 10px solid red;
-                        border-radius: 8px;
-                        background-color: transparent;
-                        background: transparent;
-                        width: 20em;
-                        height: 5px;
-
-                    &::-webkit-slider-thumb {
-                        appearance: none;
-                        background-color: green;
-                        width: 1em;
-                        height: 4em;
-                        border-radius: 8px;
-                        
-                    }
-                } */
-
                 > .smartSummary {
+                    position: absolute;
+                    position-anchor: --smartSummary-button-anchor;
+                    position-area: right;
+                    top: 50%;
+                    right: 0%;
+                    transform: translate(-20%, 0%);
+                    transform-origin: center left;
                     visibility: hidden;
                     opacity: 0;
                     padding: 0;
                     width: 0;
-                    height: 2.3em;
+                    height: 1.3em;
                     overflow: hidden;
                     display: flex;
                     white-space: nowrap;
@@ -382,9 +386,7 @@ body {
                     border-radius: 12px;
                     border: 6px solid green;
 
-                    transition: padding 0.3s ease-in-out, width 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
-                    
+                    transition: padding 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), height 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), width 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), opacity 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), visibility 0.2s cubic-bezier(0.33, 0.72, 0, 1.18), transform 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
 
                      &:focus-visible {
                         font-size: 34px;
@@ -392,6 +394,63 @@ body {
                         background-color: grey;
                         text-shadow: 0 0 5px black;
                      }
+                }
+
+                > .descriptionContainer {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    border: 6px solid red;
+                    background-color: lightyellow;
+                    border-radius: 8px;
+                    max-height: 2.3em;
+                    width: 20em;
+                    /* padding: 0.45em; */
+                    overflow: hidden;
+
+                    transition: all 0.4s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+                    > summary {
+                        list-style-type: none;
+                        cursor: pointer;
+                        font-size: 28px;
+                        padding: 0;
+                        margin: 0.5em;
+                        width: 100%;
+
+                        transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+                    }
+
+                    > p {
+                        margin: 0em;
+                        font-size: 22px;
+
+                        transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
+                    }
+                }
+
+                > .descriptionContainer[open] {
+                    justify-content: flex-start;
+                    max-height: 20em;
+                    width: 30em;
+                    border: 12px solid red;
+
+                    transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+                    > summary {
+                        font-size: 42px;
+                        font-weight: bolder;
+
+                        transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+                    }
+
+                    > p {
+                            font-size: 28px;
+                            margin: 0.5em;
+
+                            transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
+                        }
                 }
             }
         }
@@ -429,21 +488,13 @@ body {
                         text-shadow: 0 0 5px white;
                 }
                 }
-
-                /* > .smartSummary {
-                    visibility: hidden;
-                    opacity: 0;
-                    padding: 0;
-                    width: 0;
-                    height: 4em;
-                    overflow: hidden;
-                    display: flex;
-                    white-space: nowrap;
-                    align-items: center;
-                    justify-content: center;
-                } */
             }
     }
+}
+&:has(.descriptionContainer[open]) .messageContainer > .audioMessage {
+    /* height: 100%; */
+    width: 28em;
+    transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 }
 }

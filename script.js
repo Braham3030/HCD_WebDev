@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-const apiKey = config.elevenLabsApiKey;
+// const apiKey = config.elevenLabsApiKey;
 const voiceId = config.elevenLabsVoiceId;
 
 // Speech message
@@ -129,7 +129,32 @@ if (summarizeCheckbox && announcer) {
     })
 }
 
+// Focus on the details text when the details element is opened
 
+const detailsElement = document.querySelector(".descriptionContainer");
+const content = detailsElement.querySelector(".descriptionText");
+const container = document.querySelector(".messageContainer");
+
+detailsElement.addEventListener("toggle", () => {
+    if (detailsElement.open) {
+        content.focus({
+            // Focus without browser scrolling to the element
+            preventScroll: true
+        })
+        // Delay added in order to prevent animation conflicts
+        setTimeout(() => {
+            // Calculate the position of the element relative to the top of the container
+            const positionTop = content.offsetTop;
+
+            // Scroll to the element
+            container.scrollTo({
+                // -100px to prevent the element from being hidden behind the fixed elements
+                top: positionTop - 100,
+                behavior: "smooth"
+            })
+        }, 500)
+    }
+});
 
 
 
