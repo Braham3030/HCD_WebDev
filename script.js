@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Usage of .env file to ensure security
 
-// const apiKey = config.elevenLabsApiKey;
+const apiKey = config.elevenLabsApiKey;
 const voiceId = config.elevenLabsVoiceId;
 
 // Speech message
