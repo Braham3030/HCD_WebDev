@@ -1,5 +1,7 @@
 # HCD_WebDev
 
+**[Chat website met AI samenvatting](https://braham3030.github.io/HCD_WebDev/)**
+
 ## Case
 
 Toegankelijke web app maken voor 1 persoon. Op basis van de wekelijkse test, wordt er geïttereerd op de web app.
