@@ -219,6 +219,27 @@ Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit ge
 <img width="1512" height="862" alt="image" src="https://github.com/user-attachments/assets/40177146-8592-4c57-9861-54e6f26d19cf" />
 
 
+### Exclusive Design principles:
+
+#### Study situation:
+Ik heb bij het maken van een zo accesible mogelijke chat app, een user test uit mogen voeren. Ik heb hierbij de blinde persoon vele vragen gesteld en de website ook laten testen. Hier heb ik elke week aanpassingen op weten te maken, zodat de website zo goed mogelijk gebruikt kan worden door de gebruiker. De gebruiker kan wel een heel klein beetje nog zien. Deze zicht kan gebruikt worden om sneller door de pagina te navigeren, daarom heb ik er ook voor gezorgd dat de leesbaarheid en de klikbaare items zo goed mogelijk voor de gebruiker zichtbaar zijn.
+
+#### Ignore conventions:
+
+
+#### Prioritise identity:
+
+Berend is de testpersoon, hij gaf aan dat hij vaak whatsapp of signal op mobiel en laptop gebruikt. Hierbij heb ik zijn gebruiksgemak overgenomen en de layout zo neergezet, dat het lijkt alsof de website WhatsApp is, met extra functionaliteiten. Ook gaf Berend aan dat niet alle berichten samengevat hoeven te worden, omdat er sommige berichten zijn die persoonlijk belangrijk zijn om te horen. Denk hierbij aan een spraakbericht van de moeder. Om de optie erbij toe te voegen, heb ik een algemene knop gemaakt bovenin de website. Hiermee kan Berend zelf kiezen of het handig is om de spraakberichten te samenvatten. Ook zal deze knop ervoor zorgen dat Berend minder vaak door de audiofragmenten hoeft te "tabben".
+
+Ik vindt animaties vooral leuk om toe te voegen. Zo heb ik bij de interacties animaties toegevoegd die laten zien dat er een verandering plaats vindt op de pagina. Ik heb bijvoorbeeld bij het "tabben" de elementen groter laten maken met een animatie, zodat de gebruiker weet waar de "tab" zit. Dit vond Berend erg handig, omdat hij zo goed wist waar hij met de "tab" toets was.
+
+#### Add nonsense:
+
+Ik heb AI toegevoegd om de spraakberichten samen te vatten. Dit leek in eerste instante een lastige en niet behaalbare oplossing, maar nadat ik het had gevraagd en gevalideerd, werd het gewaardeerd. Er stonden hier wel vragen bij. Is het samenvatten van korte fragmenten wel redelijk? Worden de persoonlijke berichten ook samengevat, terwijl Berend dit juist wilt horen? Door deze vragen heb ik de AI samenvattings functie moeten herbedenken en de obstakels moeten vermijden. Om dit op te lossen heb ik de samenvatten knop bovenin gezet, deze knop zal alle spraakberichten in de chat de optie mee geven om het spraakbericht samen te vatten. Deze functie kan irritant werken, maar ook weer juist fijn voor Berend. Dit heb ik dus getest om zeker te zijn van de functionalteit. Deze knop vond Berend juist handig, omdat dit zo het aantal "tabben" verminderd. Ook geeft de algemene knop bovenin een korte description door de screenreader van Berend. Deze geeft de locatie en het gebruik van de AI knop aan.
+
+Ook heb ik een aantal screenreader only teksten toegevoegd. Dit zijn teksten die handig zijn voor een blinde gebruiker, maar minder handig voor een andere gebruiker. Een voorbeeld is de chat zelf, hierin heb je twee personen die chatten. Aan de linker kant de ene persoon en de rechter kant de andere. De gebruiker die niet blind is, ziet direct welke kant wie is. En zo weet de gebruiker wie wat zegt. Maar een blinde persoon weet niet welk bericht afkomstig is van hemzelf en welk van de andere persoon. Dit heb ik opgelost en getest, Berend vond dit een hele fijne toevoeging eraan.
+
+
 ## Bronnen
 
 ### Natuurlijke spraak en setup
