@@ -66,6 +66,19 @@ Vandaag layout aangepast, zodat de de chatberichten beter in beeld blijven voor 
 
 <img width="1512" height="861" alt="image" src="https://github.com/user-attachments/assets/17550f8a-4c09-40f4-a26a-ae1f8d062484" />
 
+### Dag 6
+
+Verder gewerkt aan de hand van de feedback van Berend. De website met AI samenvat functionaliteit is af. Echter zijn er een aantal kleine dingen die Berend wel fijn zou vinden erin. Zo heb ik een description toegevoegd bij het spraakbericht, zo kan Berend het spraakbericht ook lezen (zo ver hij kan). Dit brengt ook het voordeel met zich mee dat Berend de screenreader de description kan laten voorlezen, waardoor Berend 2 opties krijgt om het spraakbericht te beluisteren. De description heb ik in een knop verwerkt, omdat dit zo minder conflicteerd met de "tab" van Berend. Dit heb ik echter niet kunnen testen, omdat dit na de laatste user test erbij toegevoegd is.
+
+
+Met de descript kan de gebruiker de gehele descriptie terugzien of horen via de screenreader. Ook zal de pagina naar de "descriptie" scrollen, zodat de gebruiker direct de tekst voor zich krijgt. Dit zorgt er ook voor dat de gebruiker feedback ontvangt over het geopende tekst blok. 
+
+<img width="3827" height="1935" alt="image" src="https://github.com/user-attachments/assets/156e358f-b28b-4490-95a1-818c48cbbdf6" />
+
+Het geopende blok bevat tekst die goed leesbaar is en met een andere achtergrondkleur, zodat het voor Berend duidelijk is dat de "descriptie" opengeklapt is. Ook hier zijn de dikke borders zichtbaar en de "tab" toets versterkt dit meer door een extra eigen border eromheen te zetten.
+
+<img width="3808" height="1926" alt="image" src="https://github.com/user-attachments/assets/110d1675-0db8-408d-9e2b-445fa10d5ed9" />
+
 
 ## Voortgangsgesprek
 
@@ -142,14 +155,11 @@ Deze week heb ik gewerkt aan het bedenken van een idee voor de case. Hierbij ben
 
 * Sneltoets voor als een spraakbericht om te zetten, dus als er op een spraakbericht wordt geklikt dat er een menu komt om de spraakbericht samen te vatten.
 
-
 #### Layout en functies website Week 1
 
 * Hieronder staat de chatapp zoals in week 1 gemaakt. In deze week heb ik de layout gemaakt voor de gebruiker en kan dit ook getest worden. De gebruiker gaf hierbij aan dat hij de dikkere borders fijn vindt om te gebruiken en dat graag erin wilt houden. De dikkere borders had ik in eerste instantie op de website gehouden, omdat ik zo goed kan zien wst de ruimte is die elk element inneemt. Verder zitten hier vooral statische elementen in die wel animeren en mee geklikt kan worden. Deze elementen werken nu nog niet. De aanpassingen hebb ik gemaakt na de user test, omdat de user test een belanrijke test is om te kijken wat de user belangrijk vindt en handig vindt om te gebruiken.
 
 <img width="1512" height="858" alt="image" src="https://github.com/user-attachments/assets/2dd9ef4d-eae8-449f-aec3-298a9bd098a9" />
-
-
 
 ## Week 2
 
