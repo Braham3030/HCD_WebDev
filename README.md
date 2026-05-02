@@ -225,7 +225,7 @@ Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit ge
 Ik heb bij het maken van een zo accesible mogelijke chat app, een user test uit mogen voeren. Ik heb hierbij de blinde persoon vele vragen gesteld en de website ook laten testen. Hier heb ik elke week aanpassingen op weten te maken, zodat de website zo goed mogelijk gebruikt kan worden door de gebruiker. De gebruiker kan wel een heel klein beetje nog zien. Deze zicht kan gebruikt worden om sneller door de pagina te navigeren, daarom heb ik er ook voor gezorgd dat de leesbaarheid en de klikbaare items zo goed mogelijk voor de gebruiker zichtbaar zijn.
 
 #### Ignore conventions:
-
+Normaal gesproken hoort een website goed bruikbaar te zijn en overzichtelijk voor de gebruiker. De website is gemaakt rondom de testperoon en bevat elementen die minder niet fijn zijn om te gebruiken voor de gemiddelde gebruiker. Zo zitten er hele dikke borders in die de elementen goed aangeven. Ook de teksten en algemene layout is zo gemaakt dat het goed en snel te begrijpen is. De website is zo geoptimaliseerd dat de gebruiker niet meer in hoeft te zoomen op elementen om het beter te begrijpen. Dit haalt ook het probleem van "layout shifting" bij zoomen weg. Hiermee maak ik de website om de gebruiker heen en haal ik de normale conventions weg.
 
 #### Prioritise identity:
 
