@@ -231,6 +231,27 @@ Voor volgende week wil ik de AI samenvatten erin werkend verwerken, zodat dit ge
 <img width="1512" height="862" alt="image" src="https://github.com/user-attachments/assets/40177146-8592-4c57-9861-54e6f26d19cf" />
 
 
+### Week 4 user test:
+
+#### Voor mij:
+
+De listItems moeten andere styling krijgen bij het tabben. De tab styling verslechterd het contrast.
+
+Chatgeschiedenis spraak moet eruit!
+
+Text eronder zetten die door de spraakbericht is gegaan! "Descriptie"
+
+
+#### Layout en functies website week 4
+
+Ik heb aan de hand van de feedback de website aangepast. Zo heb ik een "descriptie" knop toegevoegd aan het audio bericht. Op deze manier kan de gebruiker de tekst ook in de descriptie laten voorlezen door de screen reader en eventueel zelf lezen.
+
+De ingeklapte en uitgeklapte situatie voor de "descriptie"".
+
+<img width="3827" height="1935" alt="image" src="https://github.com/user-attachments/assets/156e358f-b28b-4490-95a1-818c48cbbdf6" />
+<img width="3808" height="1926" alt="image" src="https://github.com/user-attachments/assets/110d1675-0db8-408d-9e2b-445fa10d5ed9" />
+
+
 ### Exclusive Design principles:
 
 #### Study situation:
