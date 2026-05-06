@@ -8,7 +8,7 @@ Toegankelijke web app maken voor 1 persoon. Op basis van de wekelijkse test, wor
 
 De case is om spraakberichten toegankelijker te maken voor de gebruiker. Spraakberichten bevatten namelijk veel afleidingen en klinkt anders ten opzichte van een tekst bericht. Ook zijn tekstberichten "to the point".
 
-Het idee is om AI te gebruiken om spraak om te zetten tot een samenvatting. Deze feature kan als een extensie gedownload worden en gebruikt worden door de gebruiker. De extensie wordt opgehaald en gebruikt via een API fetch. Hiermee wordt ervoor gezorgd dat er geen lokale AI wordt gedraaid, en dat de extension zwaart wordt.
+Het idee is om AI te gebruiken om spraak om te zetten tot een samenvatting. Deze feature kan als een extensie gedownload worden en gebruikt worden door de gebruiker. De extensie wordt opgehaald en gebruikt via een API fetch. Hiermee wordt ervoor gezorgd dat er geen lokale AI wordt gedraaid.
 
 
 ### Dag 1
@@ -249,8 +249,15 @@ Ik heb aan de hand van de feedback de website aangepast. Zo heb ik een "descript
 De ingeklapte en uitgeklapte situatie voor de "descriptie"".
 
 <img width="3827" height="1935" alt="image" src="https://github.com/user-attachments/assets/156e358f-b28b-4490-95a1-818c48cbbdf6" />
+
 <img width="3808" height="1926" alt="image" src="https://github.com/user-attachments/assets/110d1675-0db8-408d-9e2b-445fa10d5ed9" />
 
+### Case conclusie:
+Ik heb aan de hand van feedback en ittereren van het project aanpassingen gemaakt in de werking van het prototype. Zo heb ik gekozen om geen extensie te maken, omdat het doel van de itteraties is om te laten zien hoe de website verbeterd voor een persoon met bepaalde beperkingen. Hierbij is het belangrijk dat de persoon kan begrijpen hoe de website bediend kan worden en hoe de functies het gebruik van de website voor de gebruiker verbeteren. 
+
+Inplaats van een extens, heb ik direct de knop voor samenvatten toegevoegd in de website. Ook heb ik het idee van samenvatten doormiddel van AI vervangen door een simpele eigen samenvatting die door de screenreader gelezen wordt.
+
+Echter is het idee als eindproduct om een AI model toe te voegen die ervoor kan zorgen dat de spraakberichten samengevat kunnen worden. Ook zal de samenvatting alleen gebeuren bij audioberichten langer dan 30 seconden, zodat de gebruiker een optimale samenvatting krijgt van een lange spraakbericht. Kort spraakberichten bevatten namelijk al kortbondige informatie, waardoor samenvatten niet veel nut bevat.
 
 ### Exclusive Design principles:
 
